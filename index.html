@@ -1,7 +1,8 @@
-<!-- Memberitahu browser, versi html yang digunakan adalah versi ke 5 -->
+<!-- Memberitahu browser, versi html yang digunakan adalah versi ke-5 -->
 <!DOCTYPE html>
-<!-- Memberitahu browser, bahasa yang ada di halaman ini adalah english -->
+<!-- Memberitahu browser, bahasa yang ada di halam ini adalah english -->
 <html lang="en">
+
     <!-- Berisi informasi tambahan dari suatu halaman -->
     <head>
         <!-- Menentukan character set yang digunakan yaitu UTF-8 -->
@@ -12,28 +13,85 @@
         <!-- Title yang akan muncul di tab browser -->
         <title>FRONT 101</title>
     </head>
-    
+
     <!-- Berisi apapun yang ingin ditampilkan di halaman -->
     <body>
         <!-- Element -->
         <h1 style="color: blueviolet;">FRONT END 101</h1>
         <!-- 
             Tag : h1
-
             Content : FRONT END 101
-
             Attribute : style
-
             Attribute Value : color:blueviolet
          -->
 
-         <p>Lorem ipsum dolor sit.</p>
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur!</p>
+         <!-- Ordered List (urutan) -->
+         <!-- type: 1 (default), 'A', 'a', 'I', 'i' -->
+         <!-- start: nomor tertentu -->
+         <ol start='5' >
+             <li>List pertama</li>
+             <li>List kedua</li>
+             <li>List ketiga</li>
+         </ol>
 
-         <b>Tulisan Bold</b>
-         <i>Tulisan Italic</i>
-         <u>Tulisan Underline</u>
+         <!-- Unordered List (tidak memiliki urutan) -->
+         <!-- type: disc (default), circle, square -->
+         <ul type="circle">
+             <li>List pertama</li>
+             <li>List kedua</li>
+             <li>List ketiga</li>
+         </ul>
+
+         <!-- Anchor Tag (link) -->
+
+         <!-- Absolute link -->
+         <!-- 
+            Merupakan sebuah alamat yang sifatnya 'absolute', 
+            alamat akan selalu sama , terlepas dari file mana dia diakses
+        -->
+        <!-- target blank agar membuka link di tab baru -->
+        <a href="https://www.w3schools.com" target="_blank">w3schools</a>
+        <br>
+
+         <!-- Relative link -->
+         <!-- Merupakan sebuah alamat yang tergantung darimana kita mengakses -->
+        <a href="./files/about.html">About Page</a>
+        <br>
+
+        <!-- Group option -->
+        <!-- Mengelompokkan option dari dropdown (tag select) -->
+        <!-- 
+            Jika tidak memilik attribute value, maka yang akan diambil sebagai
+            value adalah konten yang ada didalam tag option
+        -->
+
+        <select>
+            <optgroup label="Hijau">
+                <option value="hijau tosca">Hijau Tosca</option>
+                <option value="hijau daun">Hijau Daun</option>
+            </optgroup>
+
+            <optgroup label="Merah">
+                <option value="merah muda">Merah Muda</option>
+                <option value="merah maroon">Merah Maroon</option>
+            </optgroup>
+
+            <optgroup label="Biru">
+                <option value="biru laut">Biru Laut</option>
+                <option value="biru dongker">Biru Dongker</option>
+            </optgroup>
+        </select>
+
+        <p>
+            <input type="radio" name="boom" id="pria"> <label for="pria">Laki - laki</label>
+            <input type="radio" name="boom" id="wanita"> <label for="wanita">Perempuan</label>
+        </p>
         
+        <p>
+            <input type="checkbox"  id="html"><label for="html">H T M L</label>
+            <input type="checkbox"  id="css"><label for="css">C S S</label>
+        </p>
+
+
     </body>
 </html>
