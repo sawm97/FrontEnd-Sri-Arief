@@ -1,0 +1,43 @@
+/* SELECTOR */
+
+/* Semua tag H2 */
+/* 
+    h2 : selector
+    color: property
+    aquamarine : value
+*/
+h2 {
+    color: aquamarine
+}
+
+/* Semua tag Paragraph */
+p {
+    color: aqua
+}
+
+/* ########## */
+/* ### ID ### */
+/* ########## */
+
+/* Semua tag yang memiliki id = danger */
+#danger {
+    color : red
+}
+
+/* ############# */
+/* ### CLASS ### */
+/* ############# */
+
+/* Semua tag yang memiliki class = warning */
+.warning {
+    color: orange
+}
+
+/* ################# */
+/* ### ATTRIBUTE ### */
+/* ################# */
+
+/* Semua tag yang memiliki attribute 'name' */
+[name] {
+    border: 2px solid rgb(16, 36, 221)
+}
